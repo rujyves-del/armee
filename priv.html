@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - Armée du Salut Congo Brazzaville</title>
+    <link rel="icon" href="logo/golo.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00457c;
+        }
+
+        .section {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+ .section h2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .section h2:hover {
+            text-decoration: underline;
+        }
+
+        .section-content {
+            display: none;
+            padding: 10px 0;
+            font-size: 0.95em;
+        }
+
+        .toggle-icon {
+            font-size: 1.5em;
+            line-height: 0.5;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+        <h1>Politique de confidentialité</h1>
+
+        <div class="section">
+            <h2>1. Informations que nous collectons <span class="toggle-icon">+</span></h2>
+            <div class="section-content">
+                <p>Nous collectons des données personnelles telles que votre nom, adresse e-mail et autres informations que vous fournissez lorsque vous interagissez avec notre site web.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Comment nous utilisons vos informations <span class="toggle-icon">+</span></h2>
+            <div class="section-content">
+                <p>Vos informations nous aident à fournir, améliorer et personnaliser nos services, répondre à vos demandes et communiquer des mises à jour importantes.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Partage des informations <span class="toggle-icon">+</span></h2>
+            <div class="section-content">
+                <p>Nous ne partageons pas vos informations avec des tiers, sauf si la loi l'exige ou avec votre consentement explicite.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Sécurité des données <span class="toggle-icon">+</span></h2>
+            <div class="section-content">
+                <p>Nous mettons en œuvre des mesures robustes pour protéger vos données personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction.</p>
+            </div>
+        </div>
+<div class="section">
+            <h2>5. Vos droits <span class="toggle-icon">+</span></h2>
+            <div class="section-content">
+                <p>Vous avez le droit d'accéder, de corriger ou de supprimer vos informations personnelles. Contactez-nous pour toute préoccupation en matière de confidentialité.</p>
+</div>
+</div>
+    </div>
+
+    <footer>
+        &copy; 2024 Armée du Salut Congo Brazzaville. Tous droits réservés.
+    </footer>
+
+    <script>
+        document.querySelectorAll('.section h2').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('.toggle-icon');
+
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
